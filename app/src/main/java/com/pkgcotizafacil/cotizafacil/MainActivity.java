@@ -8,18 +8,10 @@ import android.webkit.WebViewClient;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
-
-
-
-
-
 public class MainActivity extends AppCompatActivity {
-
     private WebView myWebView;
     private WebSettings myWebSettings;
-
     private Handler handler;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,11 +31,9 @@ public class MainActivity extends AppCompatActivity {
                     handler.postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            myWebView.goBack();;
+                            myWebView.goBack();
                         }
-                    }, 5000);
-
-
+                    }, 3000);
 
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setData(Uri.parse(url));
@@ -58,11 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
-
-
     }
-
-
 
     @Override
     public void onBackPressed(){
