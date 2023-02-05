@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         myWebSettings = myWebView.getSettings();
         myWebSettings.setJavaScriptEnabled(true);
         myWebSettings.setDomStorageEnabled(true);
-        myWebView.loadUrl("https://ivanvallenas.github.io/cotizafacil.github.io/");
+        myWebView.loadUrl("https://cotizafacil.app/");
         myWebView.setWebViewClient(new WebViewClient(){
 
             @Override
